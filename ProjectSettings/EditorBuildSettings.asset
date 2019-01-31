@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Hanashiro/taikiscene.unity
+    guid: c4ea166b8814b0343bab7c45ef78d3b9
+  - enabled: 1
+    path: Assets/Shinjou/gamejamprot.unity
+    guid: 07934b36e2a16f145af3dcf4dd28e3cd
