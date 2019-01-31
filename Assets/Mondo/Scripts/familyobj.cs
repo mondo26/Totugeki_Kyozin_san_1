@@ -23,10 +23,14 @@ public class familyobj : MonoBehaviour
 	
 	void Update ()
     {
-        // 親子関係を解除していたら処理を行う
+        // 親子関係を解除するflgが立っていたら
         if (releaseParent)
         {
+            // 親子関係解除
             gameObject.transform.parent = null;
+            // 回転数を0,0,0にする
+            transform.rotation = Quaternion.identity;  
+            // 上方向に向かって回転した力分、飛ばす。
             transform.position += transform.up * playerController._RotateForce * 0.01f;
         }
     }
